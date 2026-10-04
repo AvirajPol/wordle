@@ -53,13 +53,13 @@ def step(game, guess):
 
     arr1 = ["grey"] * 5
 
-    # First pass: Green letters
+    # Green letters
     for i in range(5):
         if input_val[i] == result[i]:
             arr1[i] = "green"
             hashmap[input_val[i]] -= 1
 
-    # Second pass: Yellow letters
+    # Yellow letters
     for i in range(5):
         if arr1[i] != "green" and hashmap.get(input_val[i], 0) > 0:
             arr1[i] = "yellow"
@@ -70,7 +70,7 @@ def step(game, guess):
     game["guesses"].append(guess)
     game["feedback"].append(arr1.copy())
 
-    # Update game status
+    # Updating game status
     if input_val == result:
         game["state"] = 1
 
