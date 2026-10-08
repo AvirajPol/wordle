@@ -12,7 +12,7 @@ def get_word():
         messages=[
             {
             "role": "user",
-            "content": "Return exactly 5 lowercase English word of 5 letters. Do not include explanations, punctuation, or formatting.Choose a word different from any example or previous guess."
+            "content": "return a random 5 letter word in english and nothing else. dont repeat the word already given by you."
             }
         ],
         max_tokens=20,

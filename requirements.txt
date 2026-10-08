@@ -1,0 +1,5 @@
+llama-cpp-python
+numpy
+pandas
+tqdm
+matplotlib
